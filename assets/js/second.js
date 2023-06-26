@@ -31,3 +31,25 @@ var x = setInterval(function() {
   }
 }, 1000);
 // ======== End the rent duration count down timer ========
+
+
+// ======== Dark Mode Toogle Functon ========
+// function toggleMode() {
+//   const body = document.body;
+//   const icon = document.getElementById("icon");
+
+//   body.classList.toggle("dark-mode");
+
+//   if (body.classList.contains("dark-mode")) {
+//     icon.classList.remove("bi-sun");
+//     icon.classList.add("bi-moon");
+//     icon.style.transform = "rotate(180deg)"; // Rotate the moon icon
+//   } else {
+//     icon.classList.remove("bi-moon");
+//     icon.classList.add("bi-sun");
+//     icon.style.transform = "rotate(0deg)"; // Reset the rotation
+//   }
+// }
+
+// ======== End dark mode toogle function ========
+
