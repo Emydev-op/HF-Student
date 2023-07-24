@@ -295,10 +295,21 @@
       </li><!-- End Payment Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="adverts.html">
-          <i class="bi bi-badge-ad"></i>
-          <span>Advert</span>
+        <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-badge-ad"></i><span>Advert</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
+        <ul id="tables-nav" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="adverts.html">
+              <i class="bi bi-circle"></i><span>Recent Advert</span>
+            </a>
+          </li>
+          <li>
+            <a href="adverts-add.html">
+              <i class="bi bi-circle"></i><span>Add Advert</span>
+            </a>
+          </li>
+        </ul>
       </li><!-- End Advert Page Nav -->
 
       <li class="nav-item">
@@ -459,7 +470,7 @@
                     <div class="row mb-3">
                       <label for="roomNo" class="col-md-4 col-lg-3 col-form-label">Room Number</label>
                       <div class="col-md-8 col-lg-9">
-                        <input name="roomNo" type="text" class="form-control" id="roomNo" value="C3/27">
+                        <input name="roomNo" type="text" class="form-control" id="roomNo" value="C3/27" readonly>
                       </div>
                     </div>
 
