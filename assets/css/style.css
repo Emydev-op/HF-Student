@@ -1224,3 +1224,48 @@ h6 {
   font-size: 13px;
   color: #012970;
 }
+
+
+
+/*--------------------------------------------------------------
+# Advert Page: 
+--------------------------------------------------------------*/
+
+/* Product Card */
+.bg-roomNo {
+  color: #3b3bff;
+  background-color: rgba(59,59,255,.2);
+}
+
+.bttn {
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  border-color: transparent;
+  display: block;
+  color: #ff3b3b;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+  border: 1.5px solid #ff3b3b;
+  border-radius: 5px;
+  transition: color 0.15s ease-in-out 0s, background-color 0.15s ease-in-out 0s, border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+}
+
+.bttn:hover {
+  background-color: #ff3b3b;
+  color: #ffffff;
+}
+
+.carp {
+  position: relative;
+  overflow: hidden;
+}
+
+.carp-img {
+  width: 100%;
+  height: auto;
+  max-height: 218px;
+}
