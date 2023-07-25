@@ -1269,3 +1269,25 @@ h6 {
   height: auto;
   max-height: 218px;
 }
+
+.btrn {
+    color: #3b3bff;
+    background-color: rgba(59,59,255,.2);
+  transition: color 0.15s ease-in-out 0s, background-color 0.15s ease-in-out 0s;
+}
+
+.btrn:hover {
+  background-color: #3b3bff;
+  color: #ffffff;
+}
+
+.btrr {
+  color: #ffffff;
+  background-color: #ff3b3b;
+  transition: color 0.15s ease-in-out 0s, background-color 0.15s ease-in-out 0s;
+}
+
+.btrr:hover {
+background-color: #f52222;
+color: #ffffff;
+}

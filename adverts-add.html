@@ -359,33 +359,126 @@
     <section class="section dashboard">
       <div class="row align-content-center justify-content-center">
         
-        <div class="card col-md-6 ">
-            <div class="card-body">
-              <h5 class="card-title">Vertical Form</h5>
+        <div class="card">
+            <div class="card-body pt-3">
+              <!-- Bordered Tabs -->
+              <ul class="nav nav-tabs nav-tabs-bordered">
 
-              <!-- Vertical Form -->
-              <form class="row g-3">
+                <li class="nav-item">
+                  <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#your-product">Your Advert</button>
+                </li>
+
+                <li class="nav-item">
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#advert-add">Add Advert</button>
+                </li>
+
+              </ul>
+              <div class="tab-content pt-2">
+
+                <div class="tab-pane fade show active profile-product" id="your-product">
+                  
+                    <!-- Top Selling -->
+                    <div class="col-12">
+                      <div class="top-selling overflow-auto">
+        
+                        <div class="card-body pb-0">
+        
+                          <table class="table table-borderless">
+                            <thead>
+                              <tr>
+                                <th scope="col">Preview</th>
+                                <th scope="col">Product Name</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Description</th>
+                                <th scope="col" class="text-center "><i class="bi bi-three-dots"></i></th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row"><a href="#"><img src="assets/img/advert/product4.jpeg" alt=""></a></th>
+                                <td class="fw-bold">Nike Air Jordan</td>
+                                <td class="text-success">&#x20A6;23,000</td>
+                                <td class="fw-bold">Sit recusandae non aspernatur laboriosam. Quia...</td>
+                                <td>
+                                  <a href="#"><span class="btrn me-2 p-1 rounded">View</span></a> 
+                                  <a href="#"><span class="btrr p-1 rounded">Delete</span></a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><a href="#"><img src="assets/img/advert/product5.jpeg" alt=""></a></th>
+                                <td class=" fw-bold">Mick Chinchin</td>
+                                <td class="text-success">&#x20A6;1,000</td>
+                                <td class="fw-bold">Illo nemo neque maiores vitae officiis cum eum...</td>
+                                <td>
+                                  <a href="#"><span class="btrn me-2 p-1 rounded">View</span></a> 
+                                  <a href="#"><span class="btrr p-1 rounded">Delete</span></a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><a href="#"><img src="assets/img/advert/product6.jpeg" alt=""></a></th>
+                                <td class="fw-bold">Tasty Small Chop</td>
+                                <td class="text-success">&#x20A6; 1,250</td>
+                                <td class="fw-bold">Sit recusandae non aspernatur laboriosam. Quia...</td>
+                                <td>
+                                  <a href="#"><span class="btrn me-2 p-1 rounded">View</span></a> 
+                                  <a href="#"><span class="btrr p-1 rounded">Delete</span></a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><a href="#"><img src="assets/img/advert/product1.jpeg" alt=""></a></th>
+                                <td class="fw-bold">MeatPie</td>
+                                <td class="text-success">&#x20A6; 800</td>
+                                <td class="fw-bold">Sit recusandae non aspernatur laboriosam. Quia...</td>
+                                <td>
+                                  <a href="#"><span class="btrn me-2 p-1 rounded">View</span></a> 
+                                  <a href="#"><span class="btrr p-1 rounded">Delete</span></a>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+        
+                        </div>
+        
+                      </div>
+                    </div><!-- End Top Selling -->
+
+                </div>
+
+                <div class="tab-pane fade profile-edit pt-3" id="advert-add">
+
+                  <!-- Add Product Form -->
+              <form class="row g-3" method="post">
                 <div class="col-12">
-                  <label for="inputNanme4" class="form-label">Your Name</label>
-                  <input type="text" class="form-control" id="inputNanme4">
+                  <label for="productimg" class="form-label">Product Image</label>
+                  <input type="file" class="form-control" id="productimg">
                 </div>
                 <div class="col-12">
-                  <label for="inputEmail4" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="inputEmail4">
+                  <label for="productName" class="form-label">Product Name</label>
+                  <input type="text" class="form-control" id="productName">
                 </div>
                 <div class="col-12">
-                  <label for="inputPassword4" class="form-label">Password</label>
-                  <input type="password" class="form-control" id="inputPassword4">
+                  <label for="productPrice" class="form-label">Product Price</label>
+                  <input type="text" class="form-control" id="productPrice">
                 </div>
                 <div class="col-12">
-                  <label for="inputAddress" class="form-label">Address</label>
-                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    <label for="desc">Product Description</label>
+                    <textarea class="form-control" placeholder="" id="desc" style="height: 100px;"></textarea>
+                </div>
+                <div class="col-12">
+                  <label for="phone" class="form-label">Phone Number</label>
+                  <input type="text" class="form-control" id="phone" placeholder="" value="08158364325">
                 </div>
                 <div class="text-center">
                   <button type="submit" class="btn btn-primary">Submit</button>
-                  <button type="reset" class="btn btn-secondary">Reset</button>
                 </div>
-              </form><!-- Vertical Form -->
+              </form><!-- Add Product Form -->
+
+                </div>
+
+              </div><!-- End Bordered Tabs -->
+
+            </div>
+          </div>
 
             </div>
           </div>
