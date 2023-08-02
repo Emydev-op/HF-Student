@@ -19,27 +19,32 @@ Installation and Setup
 1. Clone the repository to your local machine:
 
 > `bash`
+
 > `https://github.com/Emydev-op/HF-Student.git
 > cd holy-family-youth-village-hostel`
 
 2. Install Python and Django (ensure you have Python 3.6 or higher):
 
 > `bash`
+
 > `pip install django`
 
 3. Apply database migrations:
 
 > `bash`
+
 > `python manage.py migrate`
 
 4. Create a superuser to access the admin panel:
 
 > `bash`
+
 > `python manage.py createsuperuser`
 
 5. Run the development server:
 
 > `bash`
+
 > `python manage.py runserver`
 
 6. Open your web browser and navigate to **'http://http://127.0.0.1/8000/'** to access the application.
