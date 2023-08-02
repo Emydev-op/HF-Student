@@ -18,27 +18,32 @@ Installation and Setup
 
 `bash`
 ```git clone https://github.com/yourusername/holy-family-youth-village-hostel.git
-cd holy-family-youth-village-hostel```
+cd holy-family-youth-village-hostel
+```
 
 2. Install Python and Django (ensure you have Python 3.6 or higher):
 
 `bash`
-```pip install django```
+```pip install django
+```
 
 3. Apply database migrations:
 
 `bash`
-```python manage.py migrate```
+```python manage.py migrate
+```
 
 4. Create a superuser to access the admin panel:
 
 `bash`
-```python manage.py createsuperuser```
+```python manage.py createsuperuser
+```
 
 5. Run the development server:
 
 `bash`
-```python manage.py runserver```
+```python manage.py runserver
+```
 
 6. Open your web browser and navigate to **'http://localhost:8000/'** to access the application.
 
